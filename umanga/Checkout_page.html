@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        //function to print user details
+        function showaddress(event) {
+            event.preventDefault();
+
+            // Get user input values
+            var address1 = document.getElementById("address1").value;
+            var address2 = document.getElementById("address2").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var postalcode = document.getElementById("postalcode").value;
+            var country = document.getElementById("country").value;    
+
+            // Create the output text
+            var outputText = "Billing address<br>";
+            outputText +=  address1 + ",";
+            outputText +=  address2 + ",";
+            outputText +=  city + ",";
+            outputText +=  state + ",";
+            outputText +=  postalcode + ",";
+            outputText +=  country + "<br>";
+
+            // Display the output in the output div
+            document.getElementById("output").innerHTML = outputText;
+        }    
+        function showcontact(event) {
+            event.preventDefault();
+
+            var firstname = document.getElementById("firstname").value;
+            var secondname = document.getElementById("secondname").value;
+            var phonenumber = document.getElementById("phonenumber").value;
+            var email = document.getElementById("email").value;
+
+            var outputcontact = "Contact details<br>";
+            outputcontact += firstname+"_";
+            outputcontact += secondname+"<br>";
+            outputcontact += phonenumber+"<br>";
+            outputcontact += email+"<br>";
+
+            document.getElementById("contact").innerHTML = outputcontact;
+        } 
+        function alertshow(){
+            alert("Payment Succesfully")
+        }   
+    </script>
+   
+</head>
+<body>
+    
+
+    <h1 class="checkout-title">Checkout</h1>
+  
+    <!--first section for your details-->
+    <div id="wrapper">    
+        <fieldset class="field1">
+            <h2>Your Details</h2>
+            <h5 class="required-title">Indicates a required field</h5>
+            <form onsubmit="showaddress(event)"> <!--when the button click call the function-->
+                <div>
+                    <label for="address1" class="required">Address 1 :</label>
+                    <input type="text" id="address1"  size="90" placeholder="Enter address 1" required>
+                </div>    
+                <div>
+                    <label for="address2" class="required">Address 2 :</label>
+                    <input type="text" id="address2" size="90" placeholder="Enter address 2" required>
+                </div>   
+                <div> 
+                    <label for="city" class="required">Town/City :</label>
+                    <input type="text" id="city"  placeholder="Enter your Town/City" required>
+                </div>
+                <div>
+                    <label for="state" class="required">State/Region :</label>
+                    <input type="text" id="state" name="state" size="20" required>
+                </div>
+                <div>    
+                    <label for="postalcode" class="required">Postal Code :</label>
+                    <input type="text" id="postalcode" name="postalcode" size="10" required>
+                </div>
+                <div>    
+                    <label for="country" class="required">Country :</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <input type="reset" class="reset">
+                <button type="submit" class="submit">Submit</button>
+               
+            </form>    
+        </fieldset>
+    </div>
+
+     <!--Second section for contact details-->
+    <div id="wrapper2">
+        <fieldset  id="fieldset2">
+            <h2>Contact Details</h2>
+            <h5 class="required-title">Indicates a required field</h5>
+            <form onsubmit="showcontact(event)">  <!--when the button click call the function-->
+                <div>
+                    <label for="firstname" class="required">First Name :</label>
+                    <input type="text" id="firstname" name="firstname" size="30" required>
+                    <label for="secondname" class="required">Second Name</label>
+                    <input type="text" id="secondname" name="secondname" size="30" required>
+                </div>
+                <div>
+                    <label for="phonenumber" class="required">Phone Number</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" size="10" placeholder="012-3456789" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="email" class="required">Email Address :</label>
+                    <input type="email" id="email" name="email" size="20" placeholder="abc@gmail.com" required>
+                </div>
+                <input type="reset" class="reset">
+                <button type="submit" class="submit">Submit</button>
+            </form>    
+        </fieldset>
+    </div>
+
+     <!--third section for payment details-->
+    <div id="wrapper3">
+        <fieldset id="fieldset3">
+            <h2>Payment Details</h2>
+            <h5 class="required-title">Indicates a required field</h5>
+            <form>
+                <div>
+                    <label for="cardnum" class="required">Card Number</label>
+                    <input typr="text" id="cardnum" name="cardnum" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div>
+                    <label for="cardname" class="required">Card Holder's Name</label>
+                    <input typr="text" id="cardname" name="cardname" size="30" required>
+                </div>
+                <div>
+                    <label for="expiry" class="required">Expiry Date</label>
+                    <input type="month" id="cardname" name="cardname" size="10" required>
+                </div>
+                <div>
+                    <label for="cvv" class="required">cvv</label>
+                    <input type="text" id="cvv" name="cvv" size="2" maxlength="3" arequired>
+                </div>
+                <input type="reset" class="reset">
+                <button type="submit" class="submit">Submit</button>
+            </form>    
+        </fieldset>
+    </div>
+    <fieldset>
+        <div id="output">
+            
+        </div>
+        <div id="contact">
+            
+        </div>
+    </fieldset>    
+
+    <div class="final-btn">
+        <button id="button1" onclick="alertshow()">Proceed Payment</button>   <!--when the button click show the alert-->
+    </div>
+
+     <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <h3>Slack.com</h3>
+            <p>We make your future better and better!!!</p>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 #slack.com, designed by <span>Umanga Wijesuriya</span></p>
+        </div>
+
+    </footer>
+   
+</body>
+</html>

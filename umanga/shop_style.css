@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+    padding: 1px;
+    
+}
+.row{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
+.stars{
+    color: orange;
+}
+.product_name{
+    margin-top: 12px;
+    margin-bottom: -10px;
+}
+.product_price{
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+

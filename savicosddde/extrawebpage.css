@@ -1,0 +1,39 @@
+.section1{
+    text-align: center;
+    align-items: center;
+    border: solid ;
+    background-color: bisque;
+    margin-bottom: 10px;
+
+}
+body{
+    background-color: rgb(171, 122, 62);
+}
+#heading1{
+    text-align: center;
+    background-color: beige;
+}
+.section2{
+    text-align: center;
+    align-items: center;
+    border: solid ;
+    background-color: bisque;
+    margin-bottom: 10px;
+
+}
+.section3{
+    text-align: center;
+    align-items: center;
+    border: solid ;
+    background-color: bisque;
+    margin-bottom: 10px;
+
+}
+.section4{
+    text-align: center;
+    align-items: center;
+    border: solid ;
+    background-color: bisque;
+    margin-bottom: 10px;
+
+}

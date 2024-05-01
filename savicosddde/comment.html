@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Comments Form</title>
+
+    <link rel="stylesheet" href="comment.css">
+   
+  
+    
+</head>
+<body>
+  <header>
+    <a href="index2.html" class="logo"> <img src="WhatsApp Image 2023-07-22 at 14.29.19.jpeg" alt="" width="160px" height="65px" ></a>
+    <ul>
+    <a href="index2.html">HOME</a>
+    <a href="comment.html">COMMENTS</a>
+    <a href="../umanga/shop.html">SHOP</a>
+    <a href="../glen/quiz.html">QUIZ</a>
+    <a href="../savindu/sitemap.html">SITEMAP</a>
+    <a href="../glen/aboutus.html">ABOUTUS</a>
+    </ul>
+</header>
+
+  
+
+<br><br><br><br><br><br><br><br>
+<br>
+<br><br><br><br><br><br><br><br>
+<div class="query-form" id="query-form">
+  
+<form class="type" name="myForm" action="mailto:slack@gmail.com" method="post" >
+  
+  <label class="text label" id="type-label">COMMENTS FORM <p> Please share your feedback regarding the website</p></label>
+ 
+
+  <input type="text" id="name" class="input text" name="name" placeholder="Enter Your Name" >
+  <br>
+  <br>
+  <input type="email" id="email" class="input text" name="email" placeholder="Enter Your Email" >
+<br>
+<br>  <!--the "label" tag to associate each rating option with its corresponding radio button-->
+      <div>
+        <label for="rating" ><b>How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely dissatisfied and 10 is extremely satisfied. </b></label><br>
+        <br>
+        <label for="1" class="subjectNew" >1</label>
+        <label for="2" class="subjectNew">2</label>
+        <label for="3" class="subjectNew">3</label>
+        <label for="4" class="subjectNew">4</label>
+        <label for="5" class="subjectNew">5</label>
+        <label for="6" class="subjectNew">6</label>
+        <label for="7" class="subjectNew">7</label>
+        <label for="8" class="subjectNew">8</label>
+        <label for="9" class="subjectNew">9</label>
+        <label for="10" class="subjectNew">10</label>
+        <br>
+
+        <input type="radio" class="radio" name="rating" id="1" value="1" required><!--"required" attribute is used to ensure that both rating and reason fields are completed before submission-->
+        
+        <input type="radio"  class="radio" name="rating" id="2" value="2" required>
+        
+        <input type="radio" class="radio" name="rating" id="3" value="3" required>
+      
+        <input type="radio"  class="radio" name="rating" id="4" value="4" required>
+      
+        <input type="radio" class="radio" name="rating" id="5" value="5" required>
+      
+        <input type="radio" class="radio" name="rating" id="6" value="6" required>
+        
+        <input type="radio"  class="radio" name="rating" id="7" value="7" required>
+        
+        <input type="radio" class="radio" name="rating" id="8" value="8" required>
+        
+        <input type="radio" class="radio" name="rating" id="9" value="9" required>
+        
+        <input type="radio" class="radio" name="rating" id="10" value="10" required>
+        
+
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <label for="reasons"><b>Please could you tell us your reasons for giving this rating </b> </label>
+        <br><!--"textarea" tag is used for the open-ended question-->
+        <textarea class="input text issue-area" name="reasons" id="comments" rows="2" ></textarea> <br><br>
+      </div>
+
+
+      <div class="custom-select" style="width:300px;">
+        <label for="task"><b>How did you want to complete this task today?</b></label>        
+      
+        <select>
+          <option value="0" >--Please select--</option>
+          <option value="1" >phone</option>
+          <option value="2" >Website</option>
+          <option value="3" >Webchat</option>
+          <option value="4" >Social media</option>
+          <option value="5" >Email</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="custom-select" style="width:300px;">
+        <label for="task"><b>If you had to complete this task again how would you like to do it</b></label>        
+      
+        <select>
+          <option value="0" >--Please select--</option>
+          <option value="1" >phone</option>
+          <option value="2" >Website</option>
+          <option value="3" >Webchat</option>
+          <option value="4" >Social media</option>
+          <option value="5" >Email</option>
+        </select>
+      </div>
+
+        <br> 
+
+
+      <script src="commentform.js">
+      </script>
+<br>
+ <br>
+    
+
+     
+     
+   
+      <br>
+      <div id="message"></div>
+
+      <!-- The button to submit the form with the "validateForm()" function -->
+      <button class="button button_new send_button" type="submit" value="Submit" onclick="validateForm()">
+          <span class="button-icon"><ion-icon name="send-new"></ion-icon></span>
+          <span class="button-text view-buttons">Submit</span>
+      </button>
+          
+         <!-- <div class="pagedesign">
+            <a href="mydetails.html">Page editor</a>
+          </div>-->
+          
+</form> 
+</div>
+       <br>
+       <br>
+       <br>
+       <footer>
+        <div class="footer-content">
+          <img src="WhatsApp Image 2023-07-22 at 14.29.19.jpeg" alt="" width="200px" height="100px">
+            <p style="color: yellow;">We make your future better and better!!!</p>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 #slack.com, designed by <span>savi pasidu saluwadana</span></p>
+        </div>
+    
+    </footer>
+      
+
+</body>
+
+</html>

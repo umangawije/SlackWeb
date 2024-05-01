@@ -1,0 +1,348 @@
+
+body
+ {
+  background-color: rgb(122, 122, 122);/*property sets the color of the background, which in this case is black*/
+  background-repeat: no-repeat;/*which means the image will only appear once on the background*/
+  background-attachment: fixed;/*which means the background image will remain fixed in place while the rest of the content scrolls*/
+  overflow-x: hidden; 
+
+ }
+ header{
+  position: fixed;
+  top:0 ;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 12px 8px;
+  background-color:white;
+  opacity: 0.9;
+  z-index: 100;
+ 
+
+
+
+}
+header.ul:hover{
+color: #333333;
+}
+.logo{
+position: relative;
+
+
+
+  text-decoration: none;
+  transition: 0.6s;
+  
+
+}
+ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li{
+position: relative
+
+
+}
+li:hover{
+color: #333333;
+}
+a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 2px;
+  
+  transition: 0.6s;
+}
+footer{
+  background: #111;
+  /*height: auto;*/
+width: auto;
+  font-family: "Open Sans";
+  padding-bottom: 20px;
+  color: grey;
+  position: relative;
+  /*top: 100%;*/
+  margin-top: 664px;
+  bottom: 0;
+  height: 200px;
+
+  
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight:200;
+}
+
+
+
+
+
+
+ .query-form{
+  margin-top: 190px;/*adds 100 pixels of margin to the top of the element*/
+
+  width: 700px;/*sets the width of the element to 700 pixels*/
+  height: 900px;
+  min-width: 500px;/*sets the minimum width of the element to 500 pixels*/
+  background-color: rgb(255, 255, 255);/*sets the background color of the element to white*/
+  border-radius:2px;/*rounds the corners of the element by 2 pixels*/
+  top: 50%;/*positions the top edge of the element at 50% of the height of its container*/
+  left: 50%;/*positions the left edge of the element at 50% of the width of its container*/
+  transform: translate(-50%, -50%);/*centers the element horizontally and vertically by translating it 50% to the left and 50% up from its initial position*/
+  position:absolute;/*positions the element absolutely with respect to its first positioned ancestor*/
+  padding: 2px 5px;/*adds 2 pixels of padding to the top and bottom, and 5 pixels of padding to the left and right of the element*/
+  box-shadow: 20px 30px 25px rgba(0,0,0,0.15);/*adds a shadow to the element with an offset of 20 pixels to the right, 30 pixels down, a blur radius of 25 pixels, and a transparency of 0.15*/
+
+  
+  
+}
+  
+.text{
+
+  /*font-family: "Poppins", Arial, sans-serif;*/
+  font-size: 15px;
+}
+  
+.type{
+
+  margin: 20px 35px 35px 55px;
+  width: 75%;
+}
+  
+.label{
+  font-size: 30px;
+  font-weight: 200;
+  display:inline-block;
+  text-align: center;
+}
+.label p{
+  font-size:12px;
+  text-align: center;
+
+}
+.input{
+  width: 450px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border: 1px solid rgb(99, 99, 99);
+  outline: none;
+  border-radius:2px;
+  font-size: 15px;
+}
+  
+
+.radioNew{
+  padding-top: 20px;
+  padding-right: 40px;
+}
+  
+.radio{
+  display: inline;
+  padding-top: 40x;
+  margin-right:34px;
+margin-left:-6px;
+height: 20px;
+width: 20px;
+
+}
+
+
+.subject{
+  font-weight: 300;
+  padding-right: 10px;
+  font-size:18px;
+}
+  
+.subjectNew{
+  padding-right: 40px;
+  font-weight: 300;
+}
+  
+.issue-area {
+  height: 50px;
+  padding-top: 10px;
+  resize: vertical;
+  border-radius: 5px;
+  border: 1.2px solid #e3e4e6;
+  margin-top: 5px;
+  border-color: rgb(114, 114, 114);
+  font-size: 15px;
+}
+
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  display: inline;
+  
+}
+.custom-select :hover{
+background-color: #e3ba32;
+color: rgb(193, 211, 142);
+
+}
+
+.custom-select select {
+  display: none;
+   /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: rgb(229, 200, 59)
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 500px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color:transparent transparent black transparent;
+  top: 25px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+
+  color: black;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0,) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position:absolute;
+  background-color:rgb(147, 236, 227);
+  top: 100%;
+  left: 0;
+  right: 100%;
+  z-index: 99;
+  white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+  
+.button {
+  margin-top: 18px;
+  display: inline-flex;
+  height: 45px;
+  margin-right: 7px;
+  padding: 0;
+  background: #0ac2d7;
+  color: rgb(6, 6, 6);
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  text-decoration:none;
+}
+  
+.button:hover{
+  background: #0aa0d7;
+  color: #fff;
+  
+}
+  
+.button-text{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 100%;
+  }
+  
+   
+.button_new{
+  margin-top: 0;
+  margin-bottom: 30px;
+  float: right;
+}
+
+  
+.edit_button{
+  margin-right: 5px;
+  border-radius:10px;
+}
+  
+.send_button{
+  margin-right: 30px;
+  border-radius:10px;
+}
+
+
+
+
+
+
+

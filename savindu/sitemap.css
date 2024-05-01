@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+header{
+   
+  position: fixed;
+  top:0 ;
+  left: 0;
+  width: 1550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 12px 8px;
+  background-color:white;
+  opacity: 0.9;
+  z-index: 100;
+  font-family: acumin-pro, system-ui, sans-serif;
+
+}
+header.ul:hover{
+  color: #333333;
+ 
+}
+.logo{
+  position: relative;
+ 
+
+
+    text-decoration: none;
+    transition: 0.6s;
+    
+
+}
+ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ li{
+position: relative
+
+
+}
+li:hover{
+  color: #333333;
+}
+a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    padding: 2px 2px 2px 2px;
+    transition: 0.6s;
+}
+a:hover{
+  background-color: #ffe3cb;
+ border-radius: 25px;
+ 
+}
+footer{
+  background: #111;
+  /*height: auto;*/
+ width: 1600px;
+  font-family: "Open Sans";
+  padding-bottom: 20px;
+  color: grey;
+  position: relative;
+  /*top: 100%;*/
+  margin-top:auto;
+  bottom: 0;
+  height: 200px;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  text-align: center;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+body{
+ background-image: url(linkImg.jpg);
+ background-size: cover;
+  background-position: top;
+}
+
+h1 {
+  text-align: center;
+  margin: 7% 0 0 0;
+  width: 1550px;
+  color: white;
+  background-color:#3F829D;
+  text-align: center;
+}
+
+line {
+  stroke-width: 3;
+  stroke: rgb(255, 255, 255);
+}
+
+circle {
+  fill: white;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2;
+}
+
+circle:hover {
+  background-color: #3F829D;
+  fill: #3f829d;
+  cursor: pointer;
+  transition: 0.3s;
+  stroke: rgb(255, 255, 255);
+  stroke-linejoin: round;  
+  stroke-width: 2;
+}
+
+.svgt {
+  color: white;
+  font-size: 15px;
+}
+
+.svgt:hover {
+  cursor: pointer;
+}
+
+.things {
+  color: white;
+  width: 40%;
+  position: absolute;
+  top: 450px;
+  left: 800px;
+  z-index: 10;
+}
+
+.things-gallery {
+    display: none;
+}
+
+.things-shop {
+    display: none;
+}
+.things-quiz {
+    display: none;
+}
+.things-comment {
+    display: none;
+}
+
+.things-about {
+    display: none;
+}
+

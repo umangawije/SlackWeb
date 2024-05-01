@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    
+}
+body{
+    background: rgb(241, 233, 233);
+  
+}
+header{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    transition: 0.6s;
+    padding:20px 100px ;
+    background-color:white;
+    
+}
+.logo{
+  position: relative;
+    font-weight: 700;
+    color: #070707;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+li{
+    list-style-type: none;
+}
+ 
+a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+body{
+    background-color: rgb(83, 83, 78);
+}
+.pheading{
+    text-align: center;
+    margin: 50px;
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+.sec{
+    margin-top: 40px;
+}
+.stars{
+    color: orange;
+}
+
+.products .card{
+    width: 328px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+
+.products .card .description{
+    font-weight: 900;
+    font-size: 17px;
+    padding: 10px;
+    color: #000000;
+}
+.products .card .box .price{
+    font-size: 15px;
+    color: #f58427;
+    font-weight: bold;
+    padding: 8px;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .btn{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    color: #f58427 ;
+    border: 1px solid #f58427;
+    border-radius: 20px;
+    
+}
+.btn:hover{
+    background-color: #ffe3cb;
+    padding: 8px;
+    border-radius: 20px ; 
+}
+a:hover{
+    background-color: #ffe3cb;
+    padding: 8px;
+    border-radius: 20px ;
+}
+.products{
+    margin-left: 78px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/*Cart*/
+#cart-icon{
+    cursor: pointer;
+    margin-left: 1400px;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 10px;
+}
+.cart-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #d1caca;
+    box-shadow: -2px 0 4px hs1(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+.cart.active{
+    right: 0;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+   display: grid;
+   row-gap: 0.5rem ; 
+}
+.cart-product-title{
+    font-size: 1rem;
+    font-weight: bold;  
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid black ;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 19px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #000000;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: rgb(255, 250, 250);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+/*Checkout Page*/
+
+.checkout-title{
+    
+    text-align: center;
+    color: #ffffff;
+}
+fieldset{
+    margin-bottom: 30px;
+    width: 800px;
+    margin-left: 320px;
+    background-color: #d1caca;
+    padding: 20px; 
+}
+.field1{
+    margin-top: 50px;
+}
+form{
+    padding: 20px;
+    width: 800px;
+}
+input{
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
+.required::after{
+    content: "*";
+    color: red;
+}
+.required-title::before{
+    content: "*";
+    color: red;
+}
+label{
+    display: inline-block;
+    width: 140px;
+}
+.reset{
+    margin-left: 500px;
+    margin-right: 50px;
+}
+.submit{
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
+.reset:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
+#output{
+   padding: 10px;
+   font-weight: 500;
+}
+#contact{
+    padding: 10px;
+    font-weight: 500;
+ }
+.final-btn{
+   text-align: center;
+    margin: 30px;
+}
+#button1{
+    padding: 20px;
+    width: 210px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#button1:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    background: #111;
+    /*height: auto;*/
+    width: 100%;
+    font-family: "Open Sans";
+    padding-bottom: 20px;
+    color: grey;
+    position:relative;
+    /*top: 100%;*/
+    margin-top:auto;
+    bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
